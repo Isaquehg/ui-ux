@@ -26,4 +26,10 @@ body {
 #bottom-menu {
     background-color: whitesmoke;
     text-decoration: none;
+    margin: 1%;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 3em;
 }
