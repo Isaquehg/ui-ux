@@ -6,17 +6,20 @@
     <title>Home App Inatel</title>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="grid_home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
     <header>
         <div id="top-header">
             <div class="top-header-box" id="notifications">
-                <a href="">Email Icon</a>
-                <a href="">Notifications Icon</a>
+                <div id="left"><a id="email" href=""><i class="material-icons">email</i></a></div>
+                <div id="logo"><img src="/Users/isaquehg/Library/Mobile Documents/com~apple~CloudDocs/7semestre/ui-ux/code/img/inatel.png" alt="Inatel" height="50px" width="120px"></div>
+                <div id="right"><a id="notification-icon" href=""><i class="material-icons">notifications</i></a></div>
             </div>
 
-            <div class="top-header-box">
-                <a href="">Date picker</a>
+            <div class="top-header-box" id="choose-date">
+                <button> Filtrar Data </button><i class="material-icons">arrow_downward</i>
             </div>
 
             <div class="top-header-box" id="toogle-bar">
@@ -51,11 +54,11 @@
 
     <footer>
         <div id="bottom-menu">
-            <a href="">Search</a>
-            <a href="">User</a>
-            <a href="">Home</a>
-            <a href="">Frequency</a>
-            <a href="">Boost</a>
+            <a href=""><i class="material-icons">search</i></a>
+            <a href=""><i class="material-icons">person</i></a>
+            <a href=""><i class="material-icons">home</i></a>
+            <a href=""><i class="material-icons">calendar_today</i></a>
+            <a href=""><i class="material-icons">rocket</i></a>
         </div>
     </footer>
 </body>
