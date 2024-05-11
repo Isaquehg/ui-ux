@@ -2,7 +2,7 @@
 
 :root {
     --cor-blue: #0739ff;
-    --cor-white: #e2f6fc;
+    --cor-white: #f2fafc;
     --cor-black: #01000530;
   }
 
@@ -112,6 +112,36 @@ a{
     background-color: #214dfc;
 }
 
+#search-bar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-bar > input, button{
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor-white);
+}
+
+#search-bar > input {
+    padding: 1.5%;
+    width: 70%;
+    margin-right: 1%;
+    margin: 1%;
+}
+
+#search-bar > button{
+    padding: 0.7%;
+    margin: 1%;
+}
+
+#search-bar > button:hover{
+    cursor: pointer;
+    scale: 102%;
+}
+
 #toogle-bar{
     display: flex;
     align-items: center;
@@ -140,6 +170,8 @@ a{
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 #bottom-menu > a {
