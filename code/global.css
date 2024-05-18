@@ -45,6 +45,7 @@ a{
 .top-header-box > a:hover{
     cursor: pointer;
     scale: 102%;
+    color: var(--cor-gray);
 }
 
 .top-header-box {
@@ -135,6 +136,11 @@ a{
 
 #search-bar > button{
     margin: 1%;
+    height: 1.7rem;
+}
+
+#search-bar > button:hover{
+    padding: 2%;
 }
 
 #search-bar > button > i{
