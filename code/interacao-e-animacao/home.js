@@ -4,18 +4,34 @@ document.getElementById('toggle-date-picker').addEventListener('click', function
     datePickerContainer.classList.toggle('show');
 });
 
-// Light and Dark mode
-document.addEventListener('DOMContentLoaded', function () {
-    const icon = document.getElementById('dark-mode-icon');
+// Dark mode
+const icon = document.getElementById('dark-mode-icon');
+let darkModeEnabled = false;
 
-    icon.addEventListener('click', function () {
-        icon.classList.toggle('dark-mode');
-        // Toggle the icon between light and dark mode
-        if (icon.classList.contains('dark-mode')) {
-            icon.textContent = 'brightness_7'; // Change icon to represent light mode
-        } else {
-            icon.textContent = 'brightness_4'; // Change icon to represent dark mode
-        }
-    });
+function enableDarkMode() {
+    darkModeEnabled = true;
+    document.documentElement.style.setProperty('--cor-black', '#000030');
+    document.documentElement.style.setProperty('--cor-white', '#f2fafc');
+    document.documentElement.style.setProperty('--cor-gray', '#808080');
+    document.documentElement.style.setProperty('--cor-blue', '#0739ff');
+}
+
+function enableLightMode() {
+    document.documentElement.style.setProperty('--cor-black', '#ffffff');
+    document.documentElement.style.setProperty('--cor-white', '#ffffff');
+    document.documentElement.style.setProperty('--cor-gray', '#ffffff');
+    document.documentElement.style.setProperty('--cor-blue', '#ffffff');
+}
+
+function toggleDarkMode() {
+    if (darkModeEnabled) {
+        enableLightMode();
+    } else {
+        enableDarkMode()
+    }
+}
+
+icon.addEventListener('click', function () {
+    toggleDarkMode();
 });
 

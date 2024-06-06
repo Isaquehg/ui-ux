@@ -3,8 +3,8 @@
 :root {
     --cor-blue: #0739ff;
     --cor-white: #f2fafc;
-    --cor-black: #01000530;
-    --cor-gray: rgb(218, 218, 218);
+    --cor-black: #00000030;
+    --cor-gray: #DADADA;
 }
 
 body, html {
@@ -64,6 +64,12 @@ a{
     margin: 0%;
 }
 
+#notification-icon > i:hover{
+    scale: 103%;
+    color: var(--cor-gray);
+}
+
+
 #logo{
     display: flex;
     align-items: center;
@@ -76,8 +82,8 @@ a{
     filter: brightness(1000%);
 }
 
-#left{
-    
+#dark-mode-icon{
+    color: var(--cor-white);
 }
 
 #right{
@@ -138,7 +144,7 @@ a{
 #date-picker-container > input {
     appearance: none;
     background: var(--cor-white);
-    color: #000000;
+    color: var(--cor-black);
     border-radius: 10px;
     border-style: none;
 }
@@ -252,5 +258,5 @@ a{
 #bottom-menu > a:hover{
     cursor: pointer;
     scale: 102%;
-    color: white;
+    color: var(--cor-white);
 }
