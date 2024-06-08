@@ -5,10 +5,11 @@
     --cor-white: #f2fafc;
     --cor-black: #00000030;
     --cor-gray: #DADADA;
+    --cor-text: #000000;
 
-    --dark-cor-blue: #3c5aff;  /* Azul profundo */
+    --dark-cor-blue: #001eca;  /* Azul profundo */
     --dark-cor-white: #000000; /* Preto quase puro */
-    --dark-cor-black: #000000; /* Cinza escuro */
+    --dark-cor-black: #000000; 
     --dark-cor-gray: #484848; 
     --dark-cor-text: #f2f2f2;
 }
@@ -195,7 +196,7 @@ a{
 }
 
 #search-bar > button > i{
-    
+    color: var(--cor-text);
 }
 
 #search-bar > button:hover{

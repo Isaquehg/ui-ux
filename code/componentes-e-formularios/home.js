@@ -23,7 +23,6 @@ function applyTheme(darkModeEnabled) {
         document.documentElement.style.setProperty('--cor-black', '#00000030');
         document.documentElement.style.setProperty('--cor-gray', '#DADADA');
         document.body.style.backgroundColor = '#f2fafc';
-        
     }
 }
 
