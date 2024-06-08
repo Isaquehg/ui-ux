@@ -17,6 +17,7 @@ function enableDarkMode() {
 }
 
 function enableLightMode() {
+    darkModeEnabled = false;
     document.documentElement.style.setProperty('--cor-black', '#ffffff');
     document.documentElement.style.setProperty('--cor-white', '#ffffff');
     document.documentElement.style.setProperty('--cor-gray', '#ffffff');
