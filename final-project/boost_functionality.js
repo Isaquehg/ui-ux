@@ -64,3 +64,13 @@ document.getElementById('dark-mode').addEventListener('click', function (event) 
     // Aplica o tema atualizado
     applyTheme(darkModeEnabled);
 });
+
+// Notifications
+function toggleNotificationBox() {
+  const notificationBox = document.getElementById('notification-box');
+  if (notificationBox.style.display === 'flex') {
+      notificationBox.style.display = 'none';
+  } else {
+      notificationBox.style.display = 'flex';
+  }
+}

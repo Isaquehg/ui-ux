@@ -3,17 +3,13 @@
     --cor-white: #f2fafc;
     --cor-black: #00000030;
     --cor-gray: #c7c7c7;
+    --cor-text: #e7e7e7;
 
     --dark-cor-blue: #0021df;  /* Azul profundo */
     --dark-cor-white: #000000; /* Preto quase puro */
     --dark-cor-black: #000000; 
     --dark-cor-gray: #f2f2f2; 
     --dark-cor-text: #f2f2f2;
-}
-
-#container-aulas{
-    margin: 1%;
-    padding: 1%;
 }
 
 .box-aula{
@@ -24,8 +20,36 @@
     margin: 1%;
     margin-bottom: 3%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
+
 .box-aula:hover{
     cursor: pointer;
     scale: 102%;
+    background-color: var(--cor-text);
+}
+
+#container-aulas {
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-left: 1%;
+}
+
+.details.open {
+    max-height: 200px;
 }
